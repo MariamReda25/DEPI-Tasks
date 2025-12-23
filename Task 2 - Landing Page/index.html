@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <script src="src/script.js" defer></script>
+    <title>Task 2 | Landing Page</title>
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="src/assests/FP_Logo_black 1.png"
+        class="header__logo"
+        alt="Future processing logo"
+      />
+      <svg class="header__nav--btn header__nav--btn-menu">
+        <use
+          xlink:href="src/assests/symbol-defs.svg#icon-align-justified"
+        ></use>
+      </svg>
+      <svg class="header__nav--btn header__nav--btn-close">
+        <use xlink:href="src/assests/symbol-defs.svg#icon-cross"></use>
+      </svg>
+
+      <nav class="header__nav">
+        <ul class="header__nav--links">
+          <li class="header__nav--link">
+            <span>Services </span>
+
+            <svg
+              class="header__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li class="header__nav--link">
+            <a href="#"> Technologies</a>
+          </li>
+          <li class="header__nav--link">
+            <a href="#"> Clients</a>
+          </li>
+          <li class="header__nav--link">
+            <span>Company </span>
+
+            <svg
+              class="header__icon"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+          </li>
+          <li class="header__nav--link">
+            <a href="#"> Knowledge hub</a>
+          </li>
+          <li class="header__nav--link"><a href="#"> Blog</a></li>
+          <li class="header__nav--link">
+            <a href="#"> Carrer</a>
+          </li>
+          <hr />
+          <li class="header__nav--link">
+            <span>EN</span>
+            <svg class="header__icon header__icon--secondary">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-triangle-down"
+              ></use>
+            </svg>
+          </li>
+          <a href="#cta" class="btn cta__btn header__cta-btn"
+            >Contact
+            <svg class="btn--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+              ></use>
+            </svg>
+          </a>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!----------------  HERO SECTION --------------- -->
+      <section class="section-hero">
+        <div class="hero__title container">
+          <svg class="hero__icon">
+            <use xlink:href="src/assests/symbol-defs.svg#icon-home3"></use>
+          </svg>
+          <span class="hero__title--orange">bussiness blog </span>
+          <span>/ dominik samociuk</span>
+        </div>
+        <hr class="hero__line" />
+        <div class="hero__box container">
+          <img
+            src="src/assests/user.png"
+            alt="dominik samociuk"
+            class="hero__img"
+          />
+          <div class="hero__text">
+            <div class="hero__text--title">
+              <h1 class="heading-primary mb-tiny">Dominik Samociuk</h1>
+              <p class="heading-tertiary mb-small">
+                Information Security Manager at Future Processing
+              </p>
+            </div>
+            <span class="hero__paragraph hero__paragraph--1">
+              Dominik started as an independent security researcher and went
+              through variety of roles in his professional carrier.
+            </span>
+            <span class="hero__paragraph hero__paragraph--2">
+              Combining his professional work with the constant search for new
+              knowledge, he received a PhD in computer science. He is an author
+              or co-author of more than 20 scientific as well as popular science
+              articles and a holder of various certifications, e.g. CISSP, OSCP.
+            </span>
+            <span class="hero__paragraph hero__paragraph--1">
+              He's constantly finding new challenges.
+            </span>
+          </div>
+        </div>
+        <div class="hero__frame">
+          <img src="src/assests/Frame.png" />
+        </div>
+      </section>
+      <!--------------------------- ARTICLE SECTION --------------------- -->
+      <section class="section-article container">
+        <article class="article">
+          <img
+            class="article__img"
+            src="src/assests/article-1.png"
+            alt="NextJs artcile"
+          />
+          <div class="article__text">
+            <span class="article__tag">blockchain</span>
+            <p class="article__title">
+              The truth can be measured. Is it a myth, or is blockchain
+              performance really that bad?
+            </p>
+            <address class="article__author">
+              <img src="src/assests/user.png" alt="dominik samociuk author " />
+              <span>Dominik Samociuk</span>
+            </address>
+            <div class="article__date">
+              <span>23 Novamber 2022</span>
+              <svg class="article__date--icon">
+                <use xlink:href="src/assests/symbol-defs.svg#icon-time"></use>
+              </svg>
+              <span>5 min read</span>
+            </div>
+            <a href="#" class="article__link"
+              >Read the full article
+              <svg class="article__link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="article">
+          <img
+            class="article__img"
+            src="src/assests/article-2.png"
+            alt="Tech Summary"
+          />
+          <div class="article__text">
+            <span class="article__tag">blockchain</span>
+            <p class="article__title">
+              The truth can be measured. Is it a myth, or is blockchain
+              performance really that bad?
+            </p>
+            <address class="article__author">
+              <img src="src/assests/user.png" alt="dominik samociuk author " />
+              <p>Dominik Samociuk</p>
+            </address>
+            <div class="article__date">
+              <span>23 Novamber 2022</span>
+              <svg class="article__date--icon">
+                <use xlink:href="src/assests/symbol-defs.svg#icon-time"></use>
+              </svg>
+              <span>5 min read</span>
+            </div>
+            <a href="#" class="article__link"
+              >Read the full article
+              <svg class="article__link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </article>
+        <article class="article">
+          <img
+            class="article__img"
+            src="src/assests/article-3.png"
+            alt="Learning "
+          />
+          <div class="article__text">
+            <span class="article__tag">blockchain</span>
+            <p class="article__title">
+              The truth can be measured. Is it a myth, or is blockchain
+              performance really that bad?
+            </p>
+            <address class="article__author">
+              <img src="src/assests/user.png" alt="dominik samociuk author " />
+              <p>Dominik Samociuk</p>
+            </address>
+            <div class="article__date">
+              <span>23 Novamber 2022</span>
+              <svg class="article__date--icon">
+                <use xlink:href="src/assests/symbol-defs.svg#icon-time"></use>
+              </svg>
+              <span>5 min read</span>
+            </div>
+            <a href="#" class="article__link"
+              >Read the full article
+              <svg class="article__link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </article>
+      </section>
+
+      <!--------------------------- HORIZONATL LINE --------------------------- -->
+      <hr class="line" />
+
+      <!--------------------- CALL TO ACTION SECTION ----------------- -->
+      <section class="section-cta" id="cta">
+        <div class="cta__title">
+          <h2 class="heading-secondary mb-medium">Let's talk</h2>
+          <p class="cta__paragraph cta__paragraph--1 mb-tiny">
+            Need more details about the Consulting Services we offer?
+          </p>
+          <p class="cta__paragraph cta__paragraph--2">
+            Leave your contact details and we&apos;ll get back to you with
+            answers.
+          </p>
+        </div>
+        <form class="form">
+          <div class="form__group form__group--1">
+            <label for="name">Name*:</label>
+            <input type="text" name="name" id="name" required />
+          </div>
+          <div class="form__group form__group--2">
+            <label for="surname">Surname*:</label>
+            <input type="text" name="surname" id="surname" required />
+          </div>
+          <div class="form__group form__group--3">
+            <label for="phone">Phone number:</label>
+            <input type="number" name="phone" id="phone" />
+          </div>
+          <div class="form__group form__group--4">
+            <label for="company-name">Company name:</label>
+            <input type="text" name="company-name" id="company-name" />
+          </div>
+          <div class="form__group">
+            <label for="company-mail">Company e-mail address:</label>
+            <input type="mail" name="company-mail" id="company-mail" required />
+          </div>
+          <div class="form__group">
+            <label for="idea">Describe your idea:</label>
+            <input type="text" name="idea" id="idea" required />
+          </div>
+          <div class="form__group--radio">
+            <span>Do you need NDA first ?</span>
+            <div class="form__group--radio-input">
+              <input
+                type="radio"
+                name="NDA"
+                id="yes"
+                value="yes"
+                class="radio__input"
+              />
+              <label for="yes"
+                >Yes
+                <span class="form__group--radio-btn"></span>
+              </label>
+            </div>
+            <div class="form__group--radio-input">
+              <input
+                type="radio"
+                name="NDA"
+                id="no"
+                value="no"
+                class="radio__input"
+              />
+              <label for="no"
+                >No
+                <span class="form__group--radio-btn"></span>
+              </label>
+            </div>
+          </div>
+          <p class="cta__terms">
+            I understand that my personal data given in the contact form above
+            will be processed for purposes of answering my inquiry and for any
+            further correspondence regarding this inquiry. The controller of
+            your personal data is Future Processing. For more information, see
+            our
+            <span>Privacy Policy.</span>
+          </p>
+          <button class="btn cta__form-btn">
+            Send Message
+            <svg class="btn--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+              ></use>
+            </svg>
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <!-- -------------------------- FOOTER ------------------------- -->
+    <footer class="footer">
+      <div class="footer__box container">
+        <div class="footer__box-data">
+          <div class="footer__data">
+            <h3 class="heading-third heading-third--underline mb-medium">
+              Site map
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">Homepage</li>
+              <li class="footer__item">Software Services</li>
+              <li class="footer__item">About us</li>
+              <li class="footer__item">How we deliver</li>
+              <li class="footer__item">Clients</li>
+              <li class="footer__item">Knowladge Hub</li>
+              <li class="footer__item">Business Blog</li>
+            </ul>
+          </div>
+          <div class="footer__data">
+            <h3 class="heading-third heading-third--underline mb-medium">
+              Our initiatives
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">Partner Channel</li>
+              <li class="footer__item">Startnearshoring</li>
+              <li class="footer__item">Healthcare Services</li>
+              <li class="footer__item">Sens.AI</li>
+              <li class="footer__item">Cardio 4D</li>
+              <li class="footer__item">IT Insights</li>
+            </ul>
+          </div>
+          <div class="footer__data">
+            <h3 class="heading-third heading-third--underline mb-medium">
+              Company
+            </h3>
+            <ul class="footer__list">
+              <li class="footer__item">Career</li>
+              <li class="footer__item">Contact with PR</li>
+              <li class="footer__item">Going green</li>
+              <li class="footer__item">Information for shareholders</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer__contact">
+          <div>
+            <div class="footer__contact-box">
+              <p class="footer__contact--title mb-small">Send an email</p>
+              <p class="footer__contact--mail mb-small">
+                sales@future-processing.com
+              </p>
+              <p class="footer__contact--copy mb-medium">copy to clipboard</p>
+              <span class="footer__contact--phone"
+                >+44 845 805 74 <span>...view</span></span
+              >
+            </div>
+            <a href="#cta" class="btn cta__btn footer__cta-btn"
+              >Use contact form
+              <svg class="btn--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-arrow-thin-right"
+                ></use>
+              </svg>
+            </a>
+          </div>
+          <div class="footer__social-link">
+            <span>Follow us on : </span>
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-linkedin2"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-twitter"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-facebook2"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-behance"
+                ></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use xlink:href="src/assests/symbol-defs.svg#icon-play"></use>
+              </svg>
+            </a>
+
+            <a href="#">
+              <svg class="footer__social-link--icon">
+                <use
+                  xlink:href="src/assests/symbol-defs.svg#icon-instagram"
+                ></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <hr class="footer__line" />
+      <div class="footer__locations">
+        <div class="footer__locations--main container">
+          <img src="src/assests/site.png" alt="Comapny site" />
+          <div class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">Headquarters: Poland</h3>
+              <p class="footer__location--address mb-medium">
+                ul.Bojkowska 37a, 44-100 Gliwice
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+        <hr class="footer__line" />
+        <ul class="footer__locations--branches">
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">Poland</h3>
+              <p class="footer__location--address mb-medium">
+                ul. Łużycka 3c, 81-537 Gdynia
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">United Kingdom</h3>
+              <p class="footer__location--address mb-medium">
+                18 Soho Square London, W1D 3QL, GBR
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">Germany</h3>
+              <p class="footer__location--address mb-medium">
+                Erkrather Straße 401, D-40231 Düsseldorf
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">Ukraine</h3>
+              <p class="footer__location--address mb-medium">
+                вул. Мазепи 10 46000 Тернопіль, D-40231 Düsseldorf
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">United Kingdom</h3>
+              <p class="footer__location--address mb-medium">
+                18 Soho Square London, W1D 3QL, GBR
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">United Kingdom</h3>
+              <p class="footer__location--address mb-medium">
+                18 Soho Square London, W1D 3QL, GBR
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">Ukraine</h3>
+              <p class="footer__location--address mb-medium">
+                вул. Мазепи 10 46000 Тернопіль, D-40231 Düsseldorf
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">United Kingdom</h3>
+              <p class="footer__location--address mb-medium">
+                18 Soho Square London, W1D 3QL, GBR
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+          <li class="footer__location">
+            <svg class="footer__location--icon">
+              <use
+                xlink:href="src/assests/symbol-defs.svg#icon-location2"
+              ></use>
+            </svg>
+            <div class="footer__location--map">
+              <h3 class="heading-third mb-tiny">United Kingdom</h3>
+              <p class="footer__location--address mb-medium">
+                18 Soho Square London, W1D 3QL, GBR
+              </p>
+              <a href="#" class="footer__location--link">
+                <span>Google maps </span>
+                <svg class="footer__location--link-icon">
+                  <use
+                    xlink:href="src/assests/symbol-defs.svg#icon-arrow-down-right2"
+                  ></use>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        <p class="footer__copyright--text">
+          &copy; Futeure Processing. All rights reserved.&VerticalLine;<span
+            >Cookies
+          </span>
+          &VerticalLine; <span>Privacy Policy</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

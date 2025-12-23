@@ -1,0 +1,44 @@
+/*
+0 - 600px Phone
+600 - 900 px Tablet portail
+900 - 1200px Tablet Landscape
+[1200 - 1000 ] is where our normal style apply
+1800px
+ 
+$breakpoint argument choices:
+- Phone
+- tab-port
+- tab-land
+- big desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+1em = 16px
+*/
+@mixin respond($break-point) {
+  @if $break-point == phone {
+    @media only screen and (max-width: 43.75em) {
+      @content;
+    }
+  }
+  @if $break-point == tab-port {
+    @media only screen and (max-width: 58.12em) {
+      @content;
+    }
+  }
+
+  @if $break-point == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $break-point == desktop {
+    @media only screen and (max-width: 100em) {
+      @content;
+    }
+  }
+}
+
+// $bp-large-desktop: 90em; // >=1400 px
+// $bp-desktop: 72em; // >=1150 px
+// $bp-laptop: 60em; // >=960 px

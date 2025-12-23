@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style/style.css" />
+    <script src="src/script.js" defer></script>
+    <title>Pet Adoption Center</title>
+  </head>
+  <body>
+    <main>
+      <section class="section-hero container">
+        <div class="hero__text-box">
+          <h1 class="heading-primary mb-tiny">Find Your New Bestie</h1>
+          <p class="paragragh mb-medium">
+            The most amazing list of adoptable pets at your fingertips. Updated
+            fresh daily.
+          </p>
+          <div class="hero__buttons">
+            <a href="#section-pets" class="btn btn--cta">View Pets</a>
+            <a href="#" class="btn btn--secondary">Manage Pets</a>
+          </div>
+        </div>
+
+        <div class="cards">
+          <div class="card">
+            <div class="card__icon">
+              <svg>
+                <use xlink:href="src/assests/sprit.svg#icon-sun"></use>
+              </svg>
+            </div>
+            <div class="card__text">
+              <h3 class="heading-third">Sunny play</h3>
+              <p class="heading-tertiary">
+                Our center is located in beautiful Miami, and it&apos;s
+                currently 84°F at our pet playground.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg>
+                <use xlink:href="src/assests/sprit.svg#icon-wink"></use>
+              </svg>
+            </div>
+            <div class="card__text">
+              <h3 class="heading-third">Dedicated Staff</h3>
+              <p class="heading-tertiary">
+                Our center has over 70 volunteers who play with the pets four
+                times daily.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg>
+                <use xlink:href="src/assests/sprit.svg#icon-trophy"></use>
+              </svg>
+            </div>
+            <div class="card__text">
+              <h3 class="heading-third">Sunny play</h3>
+              <p class="heading-tertiary">
+                Our center is located in beautiful Miami, and it&apos;s
+                currently 84°F at our pet playground.
+              </p>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card__icon">
+              <svg>
+                <use xlink:href="src/assests/sprit.svg#icon-moon-stars"></use>
+              </svg>
+            </div>
+            <div class="card__text">
+              <h3 class="heading-third">Sunny play</h3>
+              <p class="heading-tertiary">
+                Our center is located in beautiful Miami, and it&apos;s
+                currently 84°F at our pet playground.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-pets container" id="section-pets">
+        <div class="pets__heading mb-medium">
+          <h2 class="heading-secondary">Meet Our Friends</h2>
+          <div class="pets__filter">
+            <span class="pets__filter--title">Show me: </span>
+            <button class="pets__filter--btn selected">All pets</button>
+            <button class="pets__filter--btn">Only Dogs</button>
+            <button class="pets__filter--btn">Only Cats</button>
+          </div>
+        </div>
+        <div class="pets__cards">
+          <div class="pet">
+            <div class="card__img-box">
+              <img
+                src="src/assests/pet-1.jpg"
+                alt="Barksalot"
+                class="pet__img"
+              />
+            </div>
+            <div class="pet__text">
+              <div class="pet__name">
+                <p>Barksalot</p>
+                <button class="pet__btn">
+                  <svg class="pet__icon">
+                    <use xlink:href="src/assests/sprit.svg#icon-envelope"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="pet__description">
+                Barksalot is a sweet and lovable 3 year old ball of fluff. He
+                loves carrots, celery, and playing fetch.
+              </p>
+              <span class="pet__age">2 years old</span>
+            </div>
+          </div>
+          <div class="pet">
+            <div class="card__img-box">
+              <img
+                src="src/assests/pet-2.jpg"
+                alt="Barksalot"
+                class="pet__img"
+              />
+            </div>
+            <div class="pet__text">
+              <div class="pet__name">
+                <p>Meowsalot</p>
+                <button class="pet__btn">
+                  <svg class="pet__icon">
+                    <use xlink:href="src/assests/sprit.svg#icon-envelope"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="pet__description">
+                Meowsalot is the most talkative cat we&apos;ve ever come across.
+                Constant meowing, chirping and purring!
+              </p>
+              <span class="pet__age">1 years old</span>
+            </div>
+          </div>
+          <div class="pet">
+            <div class="card__img-box">
+              <img
+                src="src/assests/pet-3.jpg"
+                alt="Barksalot"
+                class="pet__img"
+              />
+            </div>
+            <div class="pet__text">
+              <div class="pet__name">
+                <p>Woof</p>
+                <button class="pet__btn">
+                  <svg class="pet__icon">
+                    <use xlink:href="src/assests/sprit.svg#icon-envelope"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="pet__description">
+                Woof is a very talkative and sweet pup. She loves beets, plums,
+                cuddles and jumping over low fences.
+              </p>
+              <span class="pet__age">Less than a year old</span>
+            </div>
+          </div>
+          <div class="pet">
+            <div class="card__img-box">
+              <img
+                src="src/assests/pet-4.jpg"
+                alt="Barksalot"
+                class="pet__img"
+              />
+            </div>
+            <div class="pet__text">
+              <div class="pet__name">
+                <p>Purrsloud</p>
+                <button class="pet__btn">
+                  <svg class="pet__icon">
+                    <use xlink:href="src/assests/sprit.svg#icon-envelope"></use>
+                  </svg>
+                </button>
+              </div>
+              <p class="pet__description">
+                Purrsloud has the loudest and most relaxing purr that&apos;s
+                come through our center. Come hear it yourself.
+              </p>
+              <span class="pet__age">4 years old</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>&copy;2023 Fake Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <div class="popup">
+      <div class="popup__box">
+        <figure class="popup__img">
+          <img src="src/assests/pet-1.jpg" alt="selected pet " />
+          <figcaption class="popup__caption">
+            Than you for your interest in
+            <p class="popup__caption--name">Barksalot</p>
+          </figcaption>
+        </figure>
+
+        <form class="popup__form">
+          <svg class="popup__form--close">
+            <use xlink:href="src/assests/sprit.svg#icon-close"></use>
+          </svg>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="email" name="email" placeholder="Email Address" />
+          <input
+            type="text"
+            name="word"
+            placeholder="What is a word for a baby dog?"
+          />
+          <textarea
+            name="comment"
+            placeholder="Comment(optional)"
+            rows="6"
+          ></textarea>
+
+          <button class="popup__form--submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

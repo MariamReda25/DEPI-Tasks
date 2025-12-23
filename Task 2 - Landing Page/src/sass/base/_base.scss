@@ -1,0 +1,43 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+
+  @include respond(phone) {
+    font-size: 50%;
+  }
+  overflow-x: hidden;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.4s;
+
+  &:link,
+  &:visited {
+    @extend %btn-style;
+  }
+
+  &--icon {
+    width: 2rem;
+    height: 2rem;
+    fill: $color-white;
+  }
+}
+
+.line {
+  border: 2px solid $color-grey-bright;
+}
+ 

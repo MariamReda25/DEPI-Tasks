@@ -1,0 +1,162 @@
+.cta {
+  &__title {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 3.2rem;
+  }
+  &__paragraph {
+    font-size: 1.6rem;
+    &--1 {
+      color: $color-black;
+    }
+    &--2 {
+      font-weight: 400;
+    }
+  }
+
+  &__terms {
+    font-size: 1.2rem;
+    font-weight: 400;
+    align-self: center;
+    color: $color-black;
+    grid-column: center-start/ col-end 1;
+    span {
+      color: $color-secondary-dark;
+    }
+
+    @include respond(tab-port) {
+      grid-column: center-start / center-end;
+    }
+  }
+  &__form-btn {
+    align-self: start;
+    justify-self: center;
+    width: 90%;
+    font-size: 1.8rem;
+    padding: 3.2rem 4rem;
+    border: none;
+    box-shadow: 0rem 2rem 4rem rgba($color: #000000, $alpha: 0.5);
+    cursor: pointer;
+    @extend %btn-style;
+
+    @include respond(tab-land) {
+      width: 100%;
+    }
+
+    @include respond(tab-port) {
+      grid-column: center-start / center-end;
+    }
+  }
+}
+
+.form {
+  display: grid;
+  grid-template-columns:
+    [full-start] minmax(6rem, 1fr) [center-start] repeat(
+      2,
+      [col-start] 1fr [col-end]
+    )
+    [center-end] minmax(6rem, 1fr) [full-end];
+  gap: 3.2rem;
+
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  @include respond(phone) {
+    grid-template-columns: [center-start] repeat(2, 1fr) [center-end];
+  }
+
+  &__group {
+    grid-column: center-start / center-end;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+
+    input {
+      border-radius: 23px;
+      padding: 1.4rem;
+      border: 1px solid $color-grey-light-3;
+
+      &:focus {
+        outline: none;
+        border: 1px solid $color-secondary-dark;
+      }
+    }
+
+    &--1 {
+      grid-column: center-start/ col-end 1;
+      @include respond(phone) {
+        grid-column: center-start/center-end;
+      }
+    }
+    &--2 {
+      grid-column: col-start 2 / center-end;
+      @include respond(phone) {
+        grid-column: center-start/center-end;
+      }
+    }
+    &--3 {
+      grid-column: center-start/ col-end 1;
+      @include respond(phone) {
+        grid-column: center-start/center-end;
+      }
+    }
+    &--4 {
+      grid-column: col-start 2 / center-end;
+      @include respond(phone) {
+        grid-column: center-start/center-end;
+      }
+    }
+
+    &--radio {
+      grid-column: center-start / center-end;
+      align-self: center;
+
+      display: flex;
+      align-items: center;
+      gap: 3.2rem;
+
+      label {
+        position: relative;
+        cursor: pointer;
+      }
+
+      input {
+        display: none;
+      }
+
+      &-btn {
+        position: absolute;
+        top: 0.2rem;
+        left: 3rem;
+        display: inline-block;
+        width: 1.6rem;
+        height: 1.6rem;
+        border: 3px solid $color-grey-light-2;
+        border-radius: 50%;
+
+        &::after {
+          position: absolute;
+          top: 0.2rem;
+          left: 0.2rem;
+          display: block;
+          content: "";
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          background-color: $color-black;
+          opacity: 0;
+        }
+      }
+
+      &-input {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+      }
+    }
+  }
+}
+.radio__input:checked ~ label .form__group--radio-btn::after {
+  opacity: 1;
+}

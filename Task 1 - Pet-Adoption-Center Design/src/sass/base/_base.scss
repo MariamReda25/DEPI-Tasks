@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  // 1rem = 10px
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%;
+  }
+  @include respond(tab-port) {
+    font-size: 50%;
+  }
+}
+.btn {
+  &:link,
+  &:visited {
+    @extend %btn-style;
+  }
+
+  &--cta {
+    background-color: $color-secondary;
+  }
+
+  &--secondary {
+    border: 2px solid #fff;
+    transition: all 0.4s;
+    &:hover {
+      background-color: $color-secondary;
+      border: 2px solid transparent;
+    }
+  }
+}

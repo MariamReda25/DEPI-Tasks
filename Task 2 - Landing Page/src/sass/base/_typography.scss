@@ -1,0 +1,51 @@
+body {
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.8rem;
+  overflow-x: hidden;
+}
+.heading-primary {
+  color: $color-white;
+  font-weight: 700;
+  font-size: 2.6rem;
+}
+.heading-tertiary {
+  color: $color-white;
+}
+.heading-secondary {
+  font-weight: 700;
+  font-size: 5rem;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 3.6rem;
+    height: 0.4rem;
+    left: 50%;
+    display: block;
+    background-color: $color-secondary-light;
+    margin: 1.2rem 0;
+  }
+}
+.heading-third {
+  position: relative;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-white;
+
+  &--underline {
+    &::after {
+      position: absolute;
+      content: "";
+      width: 3.6rem;
+      height: 0.4rem;
+      left: 10%;
+      display: block;
+      background-color: $color-secondary-light;
+      margin: 1.8rem 0;
+    }
+  }
+}

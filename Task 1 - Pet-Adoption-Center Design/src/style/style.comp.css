@@ -1,0 +1,370 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+@media only screen and (max-width: 55.62em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+.btn--cta {
+  background-color: #475aff;
+}
+.btn--secondary {
+  border: 2px solid #fff;
+  transition: all 0.4s;
+}
+.btn--secondary:hover {
+  background-color: #475aff;
+  border: 2px solid transparent;
+}
+
+body {
+  position: relative;
+  font-family: "Source Sans 3", sans-serif;
+  font-weight: 400;
+}
+
+.heading-primary {
+  font-size: 8.2rem;
+  line-height: 1;
+  font-weight: 700;
+}
+@media only screen and (max-width: 35em) {
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+}
+
+.heading-secondary {
+  font-size: 5.2rem;
+}
+@media only screen and (max-width: 35em) {
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+}
+
+.heading-third {
+  font-size: 2.4rem;
+}
+
+.heading-tertiary {
+  font-size: 1.8rem;
+}
+
+.paragragh {
+  font-size: 2rem;
+}
+
+.mb-medium {
+  margin-bottom: 4.8rem;
+}
+
+.mb-small {
+  margin-bottom: 2.4rem;
+}
+
+.mb-tiny {
+  margin-bottom: 1.4rem;
+}
+
+.popup__form--submit, .btn:link, .btn:visited {
+  text-decoration: none;
+  color: #fff;
+  padding: 1.4rem 4rem;
+  border-radius: 71px;
+  font-size: 2rem;
+}
+
+.cards {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 3.2rem;
+}
+.cards .card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(255, 255, 255, 0.3215686275);
+  padding: 2.4rem;
+  gap: 3.2rem;
+}
+.cards .card__icon svg {
+  width: 4.8rem;
+  height: 4.8rem;
+  fill: #fff;
+}
+
+.popup {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.popup__box {
+  display: flex;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 0);
+  background-color: white;
+  box-shadow: 0 0 0.5rem 0.1rem rgba(0, 0, 0, 0.07);
+}
+@media only screen and (max-width: 75em) {
+  .popup__box {
+    width: 70%;
+  }
+}
+@media only screen and (max-width: 55.62em) {
+  .popup__box {
+    flex-direction: column;
+  }
+}
+.popup__img {
+  position: relative;
+  overflow: hidden;
+}
+.popup__img img {
+  height: 100%;
+  width: 100%;
+}
+.popup__caption {
+  color: #555555;
+  font-size: 1.6rem;
+  position: absolute;
+  top: 82%;
+  width: 100%;
+  padding: 1.4rem;
+  background-color: rgba(255, 255, 255, 0.63);
+  backdrop-filter: blur(4px);
+}
+@media only screen and (max-width: 55.62em) {
+  .popup__caption {
+    top: 0;
+  }
+}
+.popup__caption p {
+  font-size: 3.2rem;
+  color: #000000;
+}
+.popup__form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  padding: 2.4rem 3.2rem;
+}
+@media only screen and (max-width: 75em) {
+  .popup__form {
+    padding: 2.4rem;
+  }
+}
+.popup__form input,
+.popup__form textArea {
+  font-size: 1.4rem;
+  color: #888888;
+  width: 80%;
+  padding: 1.2rem;
+  border: 1px solid rgba(0, 0, 0, 0.09);
+}
+.popup__form input::placeholder,
+.popup__form textArea::placeholder {
+  font-size: 1.4rem;
+  color: #888888;
+}
+.popup__form input:focus,
+.popup__form textArea:focus {
+  outline: none;
+  border: 1px solid #475aff;
+}
+@media only screen and (max-width: 75em) {
+  .popup__form input,
+  .popup__form textArea {
+    width: 100%;
+  }
+}
+.popup__form--close {
+  align-self: flex-end;
+  width: 1.8rem;
+  height: 1.8rem;
+  fill: rgba(0, 0, 0, 0.41);
+  cursor: pointer;
+}
+.popup__form--submit {
+  align-self: flex-end;
+  border: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  background-color: #475aff;
+}
+
+.container {
+  padding: 9.6rem 20rem;
+}
+@media only screen and (max-width: 75em) {
+  .container {
+    padding: 9.6rem;
+  }
+}
+
+.section-hero {
+  color: #fff;
+  background-color: #001d37;
+  background-image: url(../assests/bg-circles.png);
+  background-size: cover;
+  row-gap: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.hero__text-box {
+  grid-column: 1/3;
+}
+@media only screen and (max-width: 55.62em) {
+  .hero__text-box {
+    grid-column: 1/-1;
+  }
+}
+.hero__buttons {
+  display: flex;
+  gap: 2.4rem;
+}
+@media only screen and (max-width: 35em) {
+  .hero__buttons {
+    flex-wrap: wrap;
+  }
+}
+
+.section-pets {
+  position: relative;
+  color: #000;
+}
+
+.pets__filter {
+  display: flex;
+  gap: 1.2rem;
+  color: #626262;
+  font-size: 2.2rem;
+}
+@media only screen and (max-width: 35em) {
+  .pets__filter {
+    font-size: 1.2rem;
+  }
+}
+.pets__filter--btn {
+  font-size: 2.2rem;
+  color: #626262;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+@media only screen and (max-width: 35em) {
+  .pets__filter--btn {
+    font-size: 1.2rem;
+  }
+}
+.pets__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(52rem, 1fr));
+  gap: 6.4rem;
+}
+
+.pet {
+  display: flex;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.08);
+  border: 1px solid #f3f3f3;
+  border-radius: 23px;
+  overflow: hidden;
+}
+@media only screen and (max-width: 35em) {
+  .pet {
+    flex-wrap: wrap;
+    width: 50%;
+  }
+}
+.pet__img-box {
+  align-self: start;
+}
+.pet__img {
+  width: 20rem;
+}
+@media only screen and (max-width: 35em) {
+  .pet__img {
+    width: 100%;
+  }
+}
+.pet__text {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  padding-inline: 3.2rem;
+}
+@media only screen and (max-width: 35em) {
+  .pet__text {
+    gap: 1rem;
+    padding-block: 3.2rem;
+  }
+}
+.pet__name {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+.pet__name p {
+  font-size: 2.4rem;
+  font-weight: 700;
+}
+.pet__btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.pet__icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  fill: rgba(71, 90, 255, 0.6509803922);
+}
+.pet__description {
+  font-size: 1.6rem;
+  color: #626262;
+}
+.pet__age {
+  font-size: 1.4rem;
+  color: #a2a2a2;
+}
+
+.selected {
+  text-decoration: underline;
+  color: #475aff;
+}
+
+.footer {
+  padding: 4.8rem;
+  font-size: 1.4rem;
+  color: #a6a6a6;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.comp.css.map */

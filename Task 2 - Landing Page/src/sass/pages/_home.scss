@@ -1,0 +1,19 @@
+.section-hero {
+  background-image: linear-gradient(
+    to right,
+    $color-grey-light-1,
+    $color-black
+  );
+}
+.section-article {
+  padding-block: 9.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+  gap: 1.8rem;
+}
+.section-cta {
+  padding-block: 9.6rem 20rem;
+  @include respond(phone) {
+    padding-inline: 3.2rem;
+  }
+}

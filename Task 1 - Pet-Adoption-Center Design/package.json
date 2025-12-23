@@ -1,0 +1,22 @@
+{
+  "name": "task-1---pet-adoption-center-design",
+  "version": "1.0.0",
+  "scripts": {
+    "watch:sass": "sass src/sass/main.scss  src/style/style.css -w",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver watch:sass",
+    "compile:sass": "sass src/sass/main.scss  src/style/style.comp.css",
+    "prefix:css": "postcss   src/style/style.comp.css --use autoprefixer -b 'last 10 versions'  -o src/style/style.prefix.css",
+    "compress:css": "sass src/style/style.prefix.css   src/style/style.css --style compressed",
+    "build:css": "npm-run-all compile:sass   prefix:css compress:css"
+  },
+  "author": "Mariam Reda",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
+    "sass": "^1.97.0"
+  }
+}
