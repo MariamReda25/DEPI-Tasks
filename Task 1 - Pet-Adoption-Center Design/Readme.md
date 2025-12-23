@@ -28,5 +28,23 @@ https://www.figma.com/design/nAT7xcLGHOtw6MMVTvKVsW/TeleportHQ---Figma-to-Code--
 
 ---
 
-## 📁 Project Structure
- 
+## ⚙️ Installation & Setup
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/MariamReda25/DEPI-Tasks/Task 1 - Pet-Adoption-Center Design
+   ```
+
+## 📐 Implementation Notes
+
+- The layout follows the Figma design closely in terms of spacing, typography, and colors.
+
+- SASS is used for better organization and scalability of styles.
+
+- Flexbox and Grid are used for layout positioning.
+
+- Autoprefixer ensures cross-browser compatibility.
+
+## Live Demo :
+
+[Task-1](https://depi-tasks-one.vercel.app/)
