@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+  <body class="">
+    <div
+      class="max-w-2xl mx-9 md:mx-auto my-8 bg-stone-300 px-10 py-2 font-primary text-lg"
+    >
+      <form action="" class="flex flex-col gap-3 form__student">
+        <div class="flex gap-2 departments__container">
+          <span>Department,</span>
+          <div>
+            <input type="radio" name="department" id="sd" data-option="SD" />
+            <label for="sd">SD</label>
+          </div>
+          <div>
+            <input type="radio" name="department" id="os" data-option="OS" />
+            <label for="os">OS</label>
+          </div>
+          <div>
+            <input type="radio" name="department" id="el" data-option="EL" />
+            <label for="el">EL</label>
+          </div>
+          <p class="error text-red-500"></p>
+        </div>
+        <div class="flex gap-2">
+          <label for="name">StudentName</label>
+          <input
+            type="text"
+            id="name"
+            required
+            class="bg-white rounded px-2 py-1 text-sm text-stone-400 input__name w-[50%]"
+          />
+        </div>
+        <div class="flex gap-2">
+          <label for="grade">StudentGrade</label>
+          <input
+            type="number"
+            id="grade"
+            min="0"
+            max="100"
+            required
+            class="bg-white rounded -none px-2 py-1 text-sm text-stone-400 input__grade"
+          />
+        </div>
+        <button class="bg-stone-400 w-[10%] cursor-pointer">Add</button>
+        <div class="flex gap-2">
+          <label>Sort</label>
+          <select class="bg-white rounded text-sm text-stone-700 select__sort">
+            <option value="name">Name</option>
+            <option value="grades">Grades</option>
+          </select>
+        </div>
+        <div class="flex gap-2">
+          <label>Filter</label>
+          <select
+            class="bg-white rounded text-sm text-stone-700 select__filter"
+          >
+            <option value="all">All</option>
+            <option value="success">Success</option>
+            <option value="fail">Failed</option>
+          </select>
+        </div>
+      </form>
+      <table class="table-fixed w-full mt-6">
+        <tbody class="flex flex-col gap-0.5 tabel__body"></tbody>
+      </table>
+    </div>
+  </body>
+</html>

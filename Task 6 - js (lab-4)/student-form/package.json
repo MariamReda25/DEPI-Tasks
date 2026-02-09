@@ -1,0 +1,17 @@
+{
+  "name": "student-form",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "tailwind:watch": "tailwindcss -i ./input.css -o ./output.css --watch",
+    "devSerever": "live-server",
+    "start": "npm-run-all --parallel tailwind:watch  devSerever"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  }
+}

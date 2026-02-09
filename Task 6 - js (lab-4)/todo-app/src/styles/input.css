@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-primary: "Noto Serif", serif;
+  --breakpoint-xs: 26.25rem;
+}
+.active__task {
+  text-decoration-line: line-through;
+}
+.active__btn {
+  text-decoration-line: underline;
+  color: grey;
+}

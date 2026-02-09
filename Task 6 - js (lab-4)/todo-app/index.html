@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles/output.css" />
+    <script src="src/js/script.js" defer></script>
+    <title>Todo Oragnizer</title>
+  </head>
+  <body class="font-primary tracking-wide">
+    <div
+      class="max-w-6xl mx-5 my-9 sm:mx-9 xl:mx-auto flex flex-col gap-5 sm:gap-7"
+    >
+      <h1
+        class="capitalize text-center text-red-800 text-xl font-semibold sm:text-2xl"
+      >
+        to do oraganizer
+      </h1>
+
+      <form class="grid grid-cols-[2fr_.5fr] gap-2 items-center form__task">
+        <input
+          required
+          placeholder="Create new todo"
+          type="text"
+          class="shadow shadow-gray-600 px-2 py-1 text-sm text-gray-700 focus:outline-none w-[90%] focus:w-full transition-all duration-150 justify-self-center placeholder:font-sans input__task rounded sm:text-lg"
+        />
+        <button
+          class="rounded bg-gray-500 text-white px-3 py-1.5 font-sans font-semibold btn__add sm:text-lg cursor-pointer hover:bg-gray-700"
+        >
+          Add
+        </button>
+      </form>
+
+      <table class="sm:text-xl">
+        <thead class="bg-red-700 text-white rounded">
+          <tr class="text-center">
+            <td class="border-r-2 border-white">Status</td>
+            <td class="border-r-2 border-white">Task</td>
+            <td>Delete</td>
+          </tr>
+        </thead>
+
+        <tbody class="text-center text-red-900 tabel__tasks"></tbody>
+      </table>
+      <footer
+        class="flex justify-between flex-wrap gap-3 text-red-900 text-sm sm:text-lg"
+      >
+        <span><span class="tasks__number">X</span> items left</span>
+        <div
+          class="flex gap-3 justify-evenly items-center order-1 xs:order-0 btn__filters"
+        >
+          <button
+            class="cursor-pointer hover:text-red-600 btn__filter active__btn"
+            data-filter="all"
+          >
+            All
+          </button>
+          <button
+            class="cursor-pointer hover:text-red-600 btn__filter"
+            data-filter="active"
+          >
+            Active
+          </button>
+          <button
+            class="cursor-pointer hover:text-red-600 btn__filter"
+            data-filter="completed"
+          >
+            Completed
+          </button>
+        </div>
+        <span>
+          <button class="cursor-pointer hover:text-red-600 btn__clear">
+            Clear Completed
+          </button>
+        </span>
+      </footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.18",
+    "npm-run-all": "^4.1.5",
+    "tailwindcss": "^4.1.18"
+  },
+  "name": "boxes",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "tailwind:watch": "tailwindcss -i input.css -o output.css --watch",
+    "devserver": "live-server",
+    "start": "npm-run-all --parallel devserver tailwind:watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
