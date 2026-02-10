@@ -329,7 +329,14 @@ function validatePassword(password) {
     reasons,
   };
 }
-
+/**
+ * 10. Write a function to check and detect suspicious activities, and flags unusual transaction patterns
+ **Rules**:
+ *- Alert on transactions >$10,000
+ *- Alert on rapid sequence of small transactions (3+ in 5 minutes)
+ * @param {Object} account
+ * @returns {Object} alerts
+ */
 const checkForSuspiciousActivity = function (account) {
   const MAX_RAPID_TRANS = 3;
   const MIN_RAPID_MIN = 5;
