@@ -1,6 +1,6 @@
 "use strict";
-const userId = 1;
-const btnFetch = document.querySelector(".btn__users--fetch");
+const form = document.querySelector(".form");
+const inputId = document.querySelector(".input__id");
 const containerEL = document.querySelector(".app__container");
 const popupEl = document.querySelector(".popup");
 const popupContentEl = document.querySelector(".popup__content");
@@ -110,6 +110,7 @@ const renderUser = function (user) {
             </button>
           </ul>
         </article>
+    
   `;
   clear(containerEL);
   containerEL.insertAdjacentHTML("afterbegin", markup);
@@ -178,7 +179,7 @@ const addHandlerContainer = function (e) {
   }
 };
 
-const addHandlerFetchBtn = async function () {
+const addHandlerFetchBtn = async function (userId) {
   try {
     renderLoader(containerEL);
     await getData(userId);
@@ -189,7 +190,10 @@ const addHandlerFetchBtn = async function () {
 };
 
 containerEL.addEventListener("click", addHandlerContainer);
-btnFetch.addEventListener("click", addHandlerFetchBtn);
+form.addEventListener("submit", function () {
+  const userId = +inputId.value;
+  addHandlerFetchBtn(userId);
+});
 popupClosBtn.addEventListener("click", function () {
   popupEl.classList.add("hidden");
 });

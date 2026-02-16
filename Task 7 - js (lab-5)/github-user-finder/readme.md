@@ -3,15 +3,17 @@
 Build an application that fetches and displays GitHub user information using the Fetch API.
 [https://api.github.com/users/${username}](https://api.github.com/users/$%7Busername%7D)
 
-# Live Demo:
+## Live Demo:
 
-# Tech Stack:
+[Github-usr-finder](https://depi-tasks-9tud.vercel.app/)
+
+## Tech Stack:
 
       - HTML
       - Tailwindcss
       - AJAX
 
-# How to run:
+## How to run:
 
 ```
 Pull repo
