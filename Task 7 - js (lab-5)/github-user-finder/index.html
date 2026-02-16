@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <script src="script.js" defer></script>
+    <title>GitHub User Finder</title>
+  </head>
+  <body class="min-h-screen bg-gray-200 mx-9 font-primary">
+    <header class="my-16 max-w-6xl mx-auto">
+      <form
+        class="flex flex-wrap gap-4 justify-end sm:flex-nowrap form__username"
+      >
+        <input
+          type="text"
+          placeholder="Enter username"
+          class="bg-white text-lg font-primary w-[100%] rounded-lg p-2 border border-transparent placeholder:text-lg focus:border-gray-700 focus:outline-none transition-all delay-100 input__username"
+        />
+        <button
+          class="bg-gray-900 text-white flex justify-center items-center gap-2 font-semibold w-[30%] rounded-lg py-1 hover:bg-gray-700 sm:w-[20%] cursor-pointer"
+        >
+          <ion-icon name="logo-github"></ion-icon>
+          <span>Search</span>
+        </button>
+      </form>
+    </header>
+    <main
+      class="bg-gray-300 max-w-6xl mx-auto py-8 flex flex-wrap p-4 rounded-2xl gap-7 lg:flex-nowrap lg:items-center lg:gap-3 app__container"
+    >
+      <div class="flex justify-center items-center grow">
+        <p class="text-center font-semibold text-gray-800 md:text-2xl">
+          Start Explore GitHub Users
+        </p>
+      </div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

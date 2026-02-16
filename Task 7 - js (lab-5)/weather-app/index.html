@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/output.css" />
+    <script src="script.js" defer></script>
+    <title>Weather Task</title>
+  </head>
+  <body
+    class="min-h-screen bg-gray-200 font-primary flex justify-center items-center"
+  >
+    <main
+      class="max-w-[100rem] bg-gray-100 flex flex-col rounded-4xl grow m-9 py-9 gap-14 app__container"
+    >
+      <div
+        class="temperature__box flex flex-col items-center py-9 text-gray-600 gap-3 lg:gap-5"
+      >
+        <p
+          class="temperatue__value text-6xl font-semibold sm:text-7xl md:text-8xl xl:text-9xl"
+        ></p>
+        <p
+          class="temperatue__status text-2xl font-semibold md:text-4xl text-gray-500"
+        ></p>
+      </div>
+      <div
+        class="w-full grid grid-cols-[repeat(auto-fit,10rem)] gap-5 text-gray-600 px-5 md:px-9 place-content-center dailyforecast__box"
+      ></div>
+    </main>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

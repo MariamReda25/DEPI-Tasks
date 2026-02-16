@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles/output.css" />
+    <title>Posts data</title>
+  </head>
+  <body class="bg-primary font-primary">
+    <main class="app__container max-w-7xl mx-9 xl:mx-auto my-9">
+      <div class="flex justify-center items-center h-screen cursor-pointer">
+        <button
+          class="btn__posts--fetch text-xl font-semibold text-text-primary bg-secondary p-6 w-1/2 rounded-2xl sm:text-2xl lg:text-3xl cursor-pointer"
+        >
+          Get Posts
+        </button>
+      </div>
+    </main>
+    <div
+      class="popup h-lvh w-full fixed top-0 left-0 bg-white/70 backdrop-blur-none hidden"
+    >
+      <div
+        class="popup__box absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-2xl bg-primary p-9 min-w-4xl"
+      >
+        <ion-icon
+          name="close-circle-outline"
+          class="popup__close text-text-primary h-8 w-8 absolute top-0 right-0 translate-y-1/4 -translate-x-1/4 cursor-pointer"
+        ></ion-icon>
+        <ul
+          class="flex flex-col gap-5 popup__content max-h-[20rem] overflow-y-scroll"
+        ></ul>
+      </div>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=SN+Pro:ital,wght@0,200..900;1,200..900&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #d4a373;
+  --color-secondary: #faedcd;
+  --color-text-primary: #403123;
+  --color-text-secondary: #55412e;
+  --color-btn: #7f6245;
+
+  --font-primary: "SN Pro", sans-serif;
+}

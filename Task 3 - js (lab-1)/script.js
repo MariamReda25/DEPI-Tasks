@@ -17,6 +17,7 @@ const checkType = function (variable) {
  * @returns result of required operation between two numbers
  */
 const calc = function (num1, num2, operation) {
+  if (!num1 || !num2 || !operation) return;
   switch (operation) {
     case "+":
       return num1 + num2;
