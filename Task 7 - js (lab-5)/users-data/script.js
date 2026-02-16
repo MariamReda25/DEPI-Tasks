@@ -73,35 +73,35 @@ const renderUser = function (user) {
                 name="mail-unread-outline"
                 class="h-8 w-8 text-text-primary sm:h-5 sm:w-5"
               ></ion-icon>
-              <span>${user.email}</span>
+              <span>${user.email || "user has no mail"}</span>
             </li>
             <li class="flex items-center gap-2">
               <ion-icon
                 name="call-outline"
                 class="h-8 w-8 text-text-primary sm:h-5 sm:w-5"
               ></ion-icon>
-              <span>${user.phone}</span>
+              <span>+${user.phone || "unavailable"}</span>
             </li>
             <li class="flex items-center gap-2">
               <ion-icon
                 name="location-outline"
                 class="h-8 w-8 text-text-primary sm:h-5 sm:w-5"
               ></ion-icon>
-              <span>${suit}@${street},${city}</span>
+              <span>${suit || ""}@${street || ""},${city || ""}</span>
             </li>
             <li class="flex items-center gap-2">
               <ion-icon
                 name="earth-outline"
                 class="h-8 w-8 text-text-primary sm:h-5 sm:w-5"
               ></ion-icon>
-              <span>${user.website}</span>
+              <span>${user.website || "No website avaliable"}</span>
             </li>
             <li class="flex items-center gap-2">
               <ion-icon
                 name="business-outline"
                 class="h-8 w-8 text-text-primary sm:h-5 sm:w-5"
               ></ion-icon>
-              <span>${user.company.name}</span>
+              <span>${user.company.name || "No Company avaliable"}</span>
             </li>
             <button
               class="col-span-full justify-self-end text-lg text-btn font-semibold cursor-pointer sm:text-xl lg:text-2xl btn__posts"
